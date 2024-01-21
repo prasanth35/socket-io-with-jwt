@@ -1,0 +1,15 @@
+###GET ALL POST
+GET http://localhost:3000/posts
+
+###GET ALL POST
+POST http://localhost:3000/generate_token
+Content-Type: application/json
+
+{
+    "username":"PRASANTH",
+    "user_id" : 10
+}
+
+###PROTECTED API
+GET http://localhost:3000/protected/post
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlBSQVNBTlRIIiwidXNlcl9pZCI6MTAsImlhdCI6MTY5OTI3OTc3MH0.YGgoYQs4ky80TdOtPtmzYIp90qoZzFI791PQFqrM6Ss
